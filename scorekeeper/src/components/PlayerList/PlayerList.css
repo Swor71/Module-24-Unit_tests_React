@@ -1,6 +1,8 @@
 .PlayerList {
+    border: 1px solid #777;
+    border-radius: 6px;
+    width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 10px 6px -6px #777;
     list-style: none;
-    border: 1px solid black;
-    margin: 0;
-    padding: 0;
 }

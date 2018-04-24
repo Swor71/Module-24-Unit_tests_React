@@ -1,32 +1,58 @@
 .Player {
-    padding: 20px;
+    min-height: 100px;
+    min-width: 400px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    margin: 10px;
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
-    border: 1px solid red;
 }
 
 .Player__details {
+    text-align: left;
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    margin-left: 20px;
 }
 
 .Player__name {
-    margin-bottom: 10px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    
 }
 
 .Player__score {
-}
-
-.Player__button_plus {
-    margin-bottom: 10px;
-}
-
-.Player__button_minus {
+    font-size: 22px;
 }
 
 .Buttons {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 5px 0;
+}
+
+.btn {
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #777;
     margin-left: 20px;
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.Player__button_plus {
+    
+}
+
+.Player__button_minus {
+    
+}
+
+.Player__button_delete {
+    
 }

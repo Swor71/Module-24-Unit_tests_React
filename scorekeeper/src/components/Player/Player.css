@@ -1,0 +1,32 @@
+.Player {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border: 1px solid red;
+}
+
+.Player__details {
+    display: flex;
+    flex-flow: column;
+}
+
+.Player__name {
+    margin-bottom: 10px;
+}
+
+.Player__score {
+}
+
+.Player__button_plus {
+    margin-bottom: 10px;
+}
+
+.Player__button_minus {
+}
+
+.Buttons {
+    display: flex;
+    flex-flow: column;
+    margin-left: 20px;
+}

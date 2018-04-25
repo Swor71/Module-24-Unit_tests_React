@@ -74,4 +74,29 @@ it('registers clicks', () => {
     onPlayerScoreChange(10);
 
     expect(mockedOnScoreUpdate).toBeCalledWith(0, 10);
-})
+});
+
+it("should call onPlayerDelete", () => {
+  const players = [
+        {
+            name: 'Player one',
+            score: 21
+        },
+        {
+            name: 'Player two',
+            score: 12
+        },
+        {
+            name: 'Player three',
+            score: 32
+        }
+    ];
+  const mockedOnPlayerDelete = jest.fn();
+  const playerComponent = shallow(
+    <PlayerList players={players} onPlayerDelete={mockedOnPlayerDelete} />
+  );
+  const firstPlayer = playerComponent.find(Player).first();
+  const onPlayerDelete = firstPlayer.prop("onPlayerDelete");
+  onPlayerDelete();
+  expect(mockedOnPlayerDelete).toBeCalled();
+});

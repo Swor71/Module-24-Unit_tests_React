@@ -35,7 +35,7 @@
     padding: 5px 0;
 }
 
-.btn {
+#btn {
     border-radius: 6px;
     background-color: transparent;
     border: 1px solid #777;
@@ -43,14 +43,17 @@
     box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
     padding: 3px 5px;
     cursor: pointer;
+    outline: none;
 }
 
 .Player__button_plus {
-    
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .Player__button_minus {
-    
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .Player__button_delete {

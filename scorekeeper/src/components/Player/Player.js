@@ -8,13 +8,13 @@ const Player = (props) => {
           <span className="Player__score">Score: {props.score}</span>
         </div>
         <div className="Buttons">
-          <button className="Player__button_plus, btn" onClick={() => props.onPlayerScoreChange(1)}>
+          <button className="Player__button_plus" id='btn' onClick={() => props.onPlayerScoreChange(1)}>
             +
           </button>
-          <button className="Player__button_minus, btn" onClick={() => props.onPlayerScoreChange(-1)}>
+          <button className="Player__button_minus" id='btn' onClick={() => props.onPlayerScoreChange(-1)}>
             -
           </button>
-          <button className='Player__button_delete, btn' onClick={() => props.onPlayerDelete()}>Delete</button>
+          <button className='Player__button_delete' id='btn' onClick={() => props.onPlayerDelete()}>Delete</button>
         </div>
       </li>;
 }
